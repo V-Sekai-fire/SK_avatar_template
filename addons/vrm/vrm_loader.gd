@@ -65,7 +65,7 @@ func _vrm_get_texture_info(gltf_images: Array, vrm_mat_props: Dictionary, unity_
 	texture_info["scale"] = Vector3(1.0, 1.0, 1.0)
 	if vrm_mat_props["textureProperties"].has(unity_tex_name):
 		var mainTexId: int = vrm_mat_props["textureProperties"][unity_tex_name]
-		var mainTexImage: ImageTexture = gltf_images[mainTexId]
+		var mainTexImage: Texture2D = gltf_images[mainTexId]
 		texture_info["tex"] = mainTexImage
 	if vrm_mat_props["vectorProperties"].has(unity_tex_name):
 		var offsetScale: Array = vrm_mat_props["vectorProperties"][unity_tex_name]
@@ -861,4 +861,7 @@ func _import_scene_internal(version: int, orig_json_utf8: PackedByteArray, rest_
 
 		_parse_secondary_node(secondary_node, vrm_extension, gstate)
 
-	return root_node
+	# Remove references
+	var packed_scene: PackedScene = PackedScene.new()
+	packed_scene.pack(root_node)
+	return packed_scene.instantiate(PackedScene.GEN_EDIT_STATE_INSTANCE)
