@@ -9,6 +9,36 @@
 config_version=5
 
 _global_script_classes=[{
+"base": "Control",
+"class": &"BlendedColorRect",
+"language": &"GDScript",
+"path": "res://addons/canvas_extension/blended_color_rect.gd"
+}, {
+"base": "Control",
+"class": &"BlendedColorRibbon",
+"language": &"GDScript",
+"path": "res://addons/canvas_extension/blended_color_ribbon.gd"
+}, {
+"base": "Control",
+"class": &"BlendedTextureRect",
+"language": &"GDScript",
+"path": "res://addons/canvas_extension/blended_texture_rect.gd"
+}, {
+"base": "Node3D",
+"class": &"Canvas3D",
+"language": &"GDScript",
+"path": "res://addons/canvas_plane/canvas_3d.gd"
+}, {
+"base": "Node3D",
+"class": &"Canvas3DAnchor",
+"language": &"GDScript",
+"path": "res://addons/canvas_plane/canvas_3d_anchor.gd"
+}, {
+"base": "Node3D",
+"class": &"CanvasPlane",
+"language": &"GDScript",
+"path": "res://addons/canvas_plane/canvas_plane.gd"
+}, {
 "base": "Node",
 "class": &"ComponentNode",
 "language": &"GDScript",
@@ -29,10 +59,45 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://addons/entity_manager/entity_ref.gd"
 }, {
+"base": "Control",
+"class": &"GridRect",
+"language": &"GDScript",
+"path": "res://addons/canvas_extension/grid_rect.gd"
+}, {
 "base": "Resource",
 "class": &"HumanoidData",
 "language": &"GDScript",
 "path": "res://addons/vsk_avatar/humanoid_data.gd"
+}, {
+"base": "EditorImportPlugin",
+"class": &"MCPImporter",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mcp_importer.gd"
+}, {
+"base": "RefCounted",
+"class": &"MocapConstants",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_constants.gd"
+}, {
+"base": "RefCounted",
+"class": &"MocapFunctions",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_functions.gd"
+}, {
+"base": "Node",
+"class": &"MocapManager",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_manager.gd"
+}, {
+"base": "EditorPlugin",
+"class": &"MocapManagerPlugin",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_manager_plugin.gd"
+}, {
+"base": "RefCounted",
+"class": &"MocapRecording",
+"language": &"GDScript",
+"path": "res://addons/sar1_mocap_manager/sar1_mocap_recording.gd"
 }, {
 "base": "NetworkLogic",
 "class": &"NetworkHierarchy",
@@ -95,11 +160,24 @@ _global_script_classes=[{
 "path": "res://addons/vsk_map/vsk_map_entity_instance_record.gd"
 }]
 _global_script_class_icons={
+"BlendedColorRect": "",
+"BlendedColorRibbon": "",
+"BlendedTextureRect": "",
+"Canvas3D": "res://addons/canvas_plane/icon_canvas_3d.svg",
+"Canvas3DAnchor": "",
+"CanvasPlane": "res://addons/canvas_plane/icon_canvas_3d.svg",
 "ComponentNode": "",
 "Entity": "",
 "EntityManagerFunctions": "",
 "EntityRef": "",
+"GridRect": "",
 "HumanoidData": "",
+"MCPImporter": "",
+"MocapConstants": "",
+"MocapFunctions": "",
+"MocapManager": "",
+"MocapManagerPlugin": "",
+"MocapRecording": "",
 "NetworkHierarchy": "",
 "NetworkIdentity": "",
 "NetworkLogic": "",
@@ -129,10 +207,21 @@ GodotMathExtension="*res://addons/math_util/math_funcs.gd"
 NetworkManager="*res://addons/network_manager/network_manager.gd"
 NetworkLogger="*res://addons/network_manager/network_logger.gd"
 LogManager="*res://addons/sar1_log_manager/log_manager.gd"
+InputManager="*res://addons/input_manager/input_manager.gd"
+PerformanceMonitor="*res://addons/performance_monitor/performance_monitor.gd"
+Console="*res://addons/sar1_console_manager/console.tscn"
+ConsoleManager="*res://addons/sar1_console_manager/console_manager.gd"
+DebugManager="*res://addons/sar1_debug_manager/debug_manager.gd"
+GraphicsManager="*res://addons/sar1_graphics_manager/graphics_manager.gd"
+SnappingSingleton="*res://addons/sar1_vr_manager/components/lasso_snapping/snapping_singleton.gd"
+VRManager="*res://addons/sar1_vr_manager/vr_manager.gd"
+VSKEditor="*res://addons/vsk_editor/vsk_editor.gd"
+GodotUroData="*res://addons/godot_uro/godot_uro_data.gd"
+GodotUro="*res://addons/godot_uro/godot_uro.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/correct_bone_direction/plugin.cfg", "res://addons/entity_manager/plugin.cfg", "res://addons/gd_util/plugin.cfg", "res://addons/math_util/plugin.cfg", "res://addons/network_manager/plugin.cfg", "res://addons/sar1_log_manager/plugin.cfg", "res://addons/vrm/plugin.cfg", "res://addons/vsk_avatar/plugin.cfg", "res://addons/vsk_importer_exporter/plugin.cfg", "res://addons/vsk_map/plugin.cfg", "res://addons/vsk_vrm_avatar_tool/plugin.cfg")
+enabled=PackedStringArray("res://addons/Godot-MToon-Shader/plugin.cfg", "res://addons/entity_manager/plugin.cfg", "res://addons/gd_util/plugin.cfg", "res://addons/math_util/plugin.cfg", "res://addons/network_manager/plugin.cfg", "res://addons/sar1_log_manager/plugin.cfg", "res://addons/vrm/plugin.cfg", "res://addons/vsk_avatar/plugin.cfg", "res://addons/vsk_importer_exporter/plugin.cfg", "res://addons/vsk_map/plugin.cfg", "res://addons/vsk_vrm_avatar_tool/plugin.cfg", "res://addons/input_manager/plugin.cfg", "res://addons/line_renderer/plugin.cfg", "res://addons/performance_monitor/plugin.cfg", "res://addons/sar1_console_manager/plugin.cfg", "res://addons/sar1_debug_manager/plugin.cfg", "res://addons/sar1_graphics_manager/plugin.cfg", "res://addons/sar1_mocap_manager/plugin.cfg", "res://addons/sar1_vr_manager/plugin.cfg", "res://addons/vsk_editor/plugin.cfg", "res://addons/vsk_entities/plugin.cfg", "res://addons/canvas_extension/plugin.cfg", "res://addons/canvas_plane/plugin.cfg", "res://addons/correct_bone_direction/plugin.cfg", "res://addons/emote_theme/plugin.cfg", "res://addons/extended_kinematic_body/plugin.cfg", "res://addons/godot_uro/plugin.cfg")
 
 [entities]
 
@@ -169,3 +258,11 @@ scaling_3d/scale=0.59
 scaling_3d/fsr_sharpness=0.4
 anti_aliasing/quality/msaa=1
 occlusion_culling/use_occlusion_culling=true
+quality/shadows/filter_mode=2
+
+[services]
+
+uro/use_localhost=true
+uro/host="127.0.0.1"
+uro/port=4000
+uro/use_ssl=true
