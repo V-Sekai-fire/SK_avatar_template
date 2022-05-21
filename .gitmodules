@@ -1,27 +1,78 @@
-[submodule "addons/vsk_vrm_avatar_tool"]
-	path = addons/vsk_vrm_avatar_tool
-	url = https://github.com/V-Sekai/vsk_vrm_avatar_tool.git
-[submodule "addons/vsk_avatar"]
-	path = addons/vsk_avatar
-	url = https://github.com/V-Sekai/vsk_avatar.git
-[submodule "addons/vsk_importer_exporter"]
-	path = addons/vsk_importer_exporter
-	url = https://github.com/V-Sekai/vsk_importer_exporter.git
+[submodule "addons/extended_kinematic_body"]
+	path = addons/extended_kinematic_body
+	url = https://github.com/V-Sekai/extended_kinematic_body.git
 [submodule "addons/gd_util"]
 	path = addons/gd_util
 	url = https://github.com/V-Sekai/gd_util.git
-[submodule "addons/math_util"]
-	path = addons/math_util
-	url = https://github.com/V-Sekai/math_util.git
-[submodule "addons/vsk_map"]
-	path = addons/vsk_map
-	url = git@github.com:V-Sekai/vsk_map.git
+[submodule "addons/canvas_plane"]
+	path = addons/canvas_plane
+	url = https://github.com/V-Sekai/canvas_plane.git
 [submodule "addons/entity_manager"]
 	path = addons/entity_manager
 	url = https://github.com/V-Sekai/entity_manager.git
+[submodule "addons/actor"]
+	path = addons/actor
+	url = https://gitlab.com/SaracenOne/actor.git
+[submodule "addons/canvas_extension"]
+	path = addons/canvas_extension
+	url = https://github.com/V-Sekai/canvas_extension.git
+[submodule "addons/input_manager"]
+	path = addons/input_manager
+	url =https://github.com/V-Sekai/input_manager.git
 [submodule "addons/network_manager"]
 	path = addons/network_manager
 	url = https://github.com/V-Sekai/network_manager.git
+[submodule "addons/performance_monitor"]
+	path = addons/performance_monitor
+	url = https://github.com/V-Sekai/performance_monitor.git
+[submodule "addons/math_util"]
+	path = addons/math_util
+	url = https://github.com/V-Sekai/math_util.git
+[submodule "addons/emote_theme"]
+	path = addons/emote_theme
+	url = https://gitlab.com/SaracenOne/emote_theme.git
+[submodule "addons/godot_uro"]
+	path = addons/godot_uro
+	url = https://github.com/V-Sekai/godot_uro
+[submodule "addons/line_renderer"]
+	path = addons/line_renderer
+	url = https://github.com/V-Sekai/line_renderer
+[submodule "addons/sar1_screenshot_manager"]
+	path = addons/sar1_screenshot_manager
+	url = https://github.com/V-Sekai/sar1_screenshot_manager
+[submodule "addons/sar1_graphics_manager"]
+	path = addons/sar1_graphics_manager
+	url = https://github.com/V-Sekai/sar1_graphics_manager
+[submodule "addons/sar1_mocap_manager"]
+	path = addons/sar1_mocap_manager
+	url = https://github.com/V-Sekai/sar1_mocap_manager
+[submodule "addons/vsk_vrm_avatar_tool"]
+	path = addons/vsk_vrm_avatar_tool
+	url = https://github.com/V-Sekai/vsk_vrm_avatar_tool
+[submodule "addons/vsk_avatar"]
+	path = addons/vsk_avatar
+	url = https://github.com/V-Sekai/vsk_avatar
+[submodule "addons/vsk_entities"]
+	path = addons/vsk_entities
+	url = https://github.com/V-Sekai/vsk_entities
+[submodule "addons/vsk_importer_exporter"]
+	path = addons/vsk_importer_exporter
+	url = https://github.com/V-Sekai/vsk_importer_exporter
+[submodule "addons/vsk_map"]
+	path = addons/vsk_map
+	url = https://github.com/V-Sekai/vsk_map
+[submodule "addons/vsk_editor"]
+	path = addons/vsk_editor
+	url = https://github.com/V-Sekai/vsk_editor
 [submodule "addons/sar1_log_manager"]
 	path = addons/sar1_log_manager
-	url = https://github.com/V-Sekai/sar1_log_manager.git
+	url = https://github.com/V-Sekai/sar1_log_manager
+[submodule "addons/sar1_console_manager"]
+	path = addons/sar1_console_manager
+	url = https://github.com/V-Sekai/sar1_console_manager
+[submodule "addons/sar1_debug_manager"]
+	path = addons/sar1_debug_manager
+	url = https://github.com/V-Sekai/sar1_debug_manager
+[submodule "addons/sar1_vr_manager"]
+	path = addons/sar1_vr_manager
+	url = https://github.com/V-Sekai/sar1_vr_manager
