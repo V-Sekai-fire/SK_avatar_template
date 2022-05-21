@@ -14,8 +14,8 @@ func _notification(p_notification: int):
 			print("Destroying VSKVersion plugin")
 
 
-func get_name() -> String:
-	return "VSKVersion"
+func get_name() -> StringName:
+	return &"VSKVersion"
 
 
 func _enter_tree() -> void:
