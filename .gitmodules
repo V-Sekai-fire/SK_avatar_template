@@ -12,7 +12,7 @@
 	url = https://github.com/V-Sekai/entity_manager.git
 [submodule "addons/actor"]
 	path = addons/actor
-	url = https://gitlab.com/SaracenOne/actor.git
+	url = https://github.com/V-Sekai/actor.git
 [submodule "addons/canvas_extension"]
 	path = addons/canvas_extension
 	url = https://github.com/V-Sekai/canvas_extension.git
@@ -30,7 +30,7 @@
 	url = https://github.com/V-Sekai/math_util.git
 [submodule "addons/emote_theme"]
 	path = addons/emote_theme
-	url = https://gitlab.com/SaracenOne/emote_theme.git
+	url = https://github.com/V-Sekai/emote_theme.git
 [submodule "addons/godot_uro"]
 	path = addons/godot_uro
 	url = https://github.com/V-Sekai/godot_uro
