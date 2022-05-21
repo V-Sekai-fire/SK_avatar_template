@@ -194,7 +194,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="VSK_template"
+config/name="VSK_map_template"
 config/features=PackedStringArray("4.0")
 
 [assets]
