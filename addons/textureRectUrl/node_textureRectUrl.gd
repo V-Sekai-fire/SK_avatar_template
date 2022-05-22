@@ -1,14 +1,13 @@
 @tool
-extends TextureRect
+extends TextureButton
 
-
-var request_in_progress: String = ""
+var request_in_progress: String
 var http: HTTPRequest
 var progress_texture = TextureProgressBar.new()
-var file_name = ""
-var file_ext = ""
+var file_name : String
+var file_ext : String
 
-@export var textureUrl = "" :
+@export var textureUrl : String :
 	set = _setTextureUrl
 
 @export var storeCache : bool = true
@@ -58,7 +57,7 @@ func _loadImage():
 			_image.load(str("user://cache/", file_name))
 			var _texture = ImageTexture.new()
 			_texture.create_from_image(_image)
-			texture = _texture
+			texture_normal = _texture
 			
 			if !Engine.is_editor_hint():
 				progress_texture.hide()
@@ -168,7 +167,7 @@ func _on_HTTPRequest_request_completed(result: int, response_code: int, _headers
 			progress_texture.hide()
 		
 			# Assign a downloaded texture
-			texture = _texture
+			texture_normal = _texture
 		else:
 			print("Request completed but failed to parse for " + this_url + " ext " + str(file_ext))
 	else:
@@ -192,7 +191,7 @@ func _base64texture(image64):
 	image.load_png_from_buffer(Marshalls.base64_to_raw(tmp))
 	var _texture = ImageTexture.new()
 	_texture.create_from_image(image)
-	texture = _texture
+	texture_normal = _texture
 	
 	if !Engine.is_editor_hint():
 		progress_texture.hide()
