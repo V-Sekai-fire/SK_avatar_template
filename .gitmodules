@@ -10,9 +10,6 @@
 [submodule "addons/entity_manager"]
 	path = addons/entity_manager
 	url = https://github.com/V-Sekai/entity_manager.git
-[submodule "addons/actor"]
-	path = addons/actor
-	url = https://github.com/V-Sekai/actor.git
 [submodule "addons/canvas_extension"]
 	path = addons/canvas_extension
 	url = https://github.com/V-Sekai/canvas_extension.git
