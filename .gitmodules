@@ -25,9 +25,6 @@
 [submodule "addons/math_util"]
 	path = addons/math_util
 	url = https://github.com/V-Sekai/math_util.git
-[submodule "addons/emote_theme"]
-	path = addons/emote_theme
-	url = https://github.com/V-Sekai/emote_theme.git
 [submodule "addons/godot_uro"]
 	path = addons/godot_uro
 	url = https://github.com/V-Sekai/godot_uro
