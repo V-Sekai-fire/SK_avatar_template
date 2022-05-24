@@ -1,5 +1,5 @@
 @tool
-extends TextureButton
+extends TextureRect
 
 var request_in_progress: String
 var http: HTTPRequest
